@@ -3,8 +3,8 @@ package com.sk.salmankhan.tictactoe;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.GridLayout;
 import android.view.View;
-import android.widget.GridLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -12,7 +12,8 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
 
-// 0 = yellow, 1 = red
+
+    // 0 = yellow, 1 = red
 
     int activePlayer = 0;
 
@@ -126,7 +127,7 @@ public class MainActivity extends AppCompatActivity {
 
         }
 
-        GridLayout gridLayout = (GridLayout)findViewById(R.id.gridLayout);
+        GridLayout gridLayout = (GridLayout) findViewById(R.id.gridLayout);
 
         for (int i = 0; i< gridLayout.getChildCount(); i++) {
 
@@ -135,8 +136,6 @@ public class MainActivity extends AppCompatActivity {
         }
 
     }
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
